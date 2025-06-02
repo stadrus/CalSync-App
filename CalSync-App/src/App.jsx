@@ -12,7 +12,7 @@ import EventTable from './components/event components/EventTable'
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <div className='flex-container'>
           <Header />
             <Routes>
@@ -25,7 +25,7 @@ function App() {
             </Routes>
           <Footer />
         </div>
-      </BrowserRouter> 
+      </HashRouter> 
     </>
   )
 }
