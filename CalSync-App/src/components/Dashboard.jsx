@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import EventTable from "./event components/EventTable";
+import ShareButton from "./ShareButton";
 
 const Dashboard = () => {
 
@@ -14,6 +15,7 @@ const Dashboard = () => {
                 <button type='button' id="Logout" name="Logout" onClick={handleLogoutClick}>Logout</button>
             </header>
             <EventTable />
+            <ShareButton></ShareButton>
         </div>
     )
 };

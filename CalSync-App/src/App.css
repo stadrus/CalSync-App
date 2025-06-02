@@ -3,7 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffd97d;
+    background-color: whitesmoke;
 }
 header{
     margin: 0;
@@ -52,10 +52,10 @@ header h1{
     gap: 20px;
     justify-content: space-between;
     padding: 20px;
-    background-color: #ffd97d;
+    background-color: whitesmoke;
 }
 .box{
-    background-color: #ffd97d;
+    background-color: whitesmoke;
     color: #1E212B;
     flex: 1;
     margin: 0 10px;
