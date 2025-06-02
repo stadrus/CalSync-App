@@ -13,8 +13,8 @@ function App() {
   return (
     <>
       <HashRouter>
-        <div className='flex-container'>
           <Header />
+        <div className='flex-container'>
             <Routes>
                 <Route className="box" path='/Home' element={<Home /> }/>
                 <Route className="box" path='/About' element={ <About /> }/>
@@ -23,8 +23,8 @@ function App() {
                 <Route className="box" path="/Dashboard" element={<Dashboard /> }/>
                 <Route className="box" path="/EventList" element={<EventTable /> }></Route>
             </Routes>
-          <Footer />
         </div>
+          <Footer />
       </HashRouter> 
     </>
   )

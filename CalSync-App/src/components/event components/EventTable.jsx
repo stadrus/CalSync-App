@@ -56,7 +56,7 @@ const EventTable = () =>{
         id: nanoid(),
         title: addFormData.title,
         details: addFormData.details,
-        data: addFormData.date,
+        date: addFormData.date,
         };
         const newEvents = [...events, newEvent];
         setEvents(newEvents);
@@ -70,7 +70,7 @@ const EventTable = () =>{
         id: editEventId,
         title: editFormData.title,
         details: editFormData.details,
-        data: editFormData.date,
+        date: editFormData.date,
         };
 
         const newEvents = [...events];
@@ -112,13 +112,13 @@ const EventTable = () =>{
                         <tr>
                             <th>Event Title</th>
                             <th>Event Details</th>
-                            <th>Date</th>
+                            <th>Event Date</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                     {events.map((event) =>(
-                        <Fragment>
+                        <Fragment key={event.id}>
                         {editEventId === event.id ? ( <EditRow editFormData ={editFormData} handleEditFormChange={handleEditFormChange}
                         handleCancelClick={handleCancelClick}
                         />) : (<ReadRow event={event} handleEditClick = {handleEditClick} handleDeleteClick ={handleDeleteClick}/>)}
@@ -142,7 +142,7 @@ const EventTable = () =>{
                     placeholder="Enter event details"
                     onChange = {handleAddFormChange}/>
                 <input 
-                    type="text"
+                    type='date'
                     name="date"
                     required="required"
                     placeholder="Enter a date"

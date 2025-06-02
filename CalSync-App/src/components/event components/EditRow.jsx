@@ -1,3 +1,4 @@
+//this component uses props to handle the form change whenever the user eidits the data.//
 const EditRow = ({editFormData, handleEditFormChange, handleCancelClick}) => {
     return (
         <tr>
@@ -23,7 +24,7 @@ const EditRow = ({editFormData, handleEditFormChange, handleCancelClick}) => {
             </td>
             <td>
                 <input 
-                type="text"
+                type='date'
                 name="date"
                 required="required"
                 placeholder="Enter a event date"
