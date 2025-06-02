@@ -8,7 +8,7 @@ const Header = () => {
                 <img className="logo" src={logo} alt="CalSync Logo"></img>
                 <h1>CalSync</h1>
             <nav className="nav-bar">
-              <Link to='/Home'>Home</Link> | <Link to='/About'>About Us</Link>
+              <Link className="home-button" to='/Home'>Home</Link> | <Link className="about-button" to='/About'>About Us</Link>
             </nav>
             </header>
         </div>
